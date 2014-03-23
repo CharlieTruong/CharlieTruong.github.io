@@ -1,0 +1,185 @@
+/* Layout
+   ========================================================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font: 1rem/1.5 "Arial", sans-serif; }
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 48rem;
+}
+
+a {
+  color: #4f9fCf;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+#profile_pic{
+  display: none;
+}
+
+#title{
+  text-align: center;
+}
+
+.time_frame{
+  float: right;
+}
+
+footer img{
+  width: 10%;
+}
+
+#copyright {
+  text-align: center;
+}
+
+
+/* Header
+   ========================================================================== */
+
+header { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f8f8;
+}
+
+nav{
+  margin-top: 1%;
+}
+
+nav h3{
+  margin: 0;
+}
+
+nav ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+nav li {
+  float:left;
+  width: 33%;
+}
+
+nav a {
+  display: block;
+  width: 100%;
+  background-color: #E2E2E2;
+  text-align: center;
+}
+
+nav a:hover{
+  background-color: #CFCFCF;
+  text-decoration: none;
+}
+
+/* Typography
+   ========================================================================== */
+
+
+/* Grid
+   ========================================================================== */
+
+/* Small screens (default) */
+html { font-size: 100%; 
+  overflow-y: scroll;
+}
+ 
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 24.95%; }
+  .column.flow-opposite { float: right; } 
+
+  #profile_pic{
+    display: block;
+    width: 50%;
+    border-radius: 5rem;
+    border: 0.25rem solid #B2B2B2;
+    vertical-align: middle;
+  }
+
+  #title{
+    text-align: left;
+  }
+
+  footer img{
+    width: 6%;
+  }
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+
+  #profile_pic{
+    width: 40%;
+  }
+
+  footer img{
+    width: 3%;
+  } 
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+
+/* Syntax Highlighting
+   ========================================================================== */
+
+pre, code {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+pre { padding: 1rem; }
+code { padding: .1rem .3rem; }
+pre code { border: none; }
+
+/* Footer
+   ========================================================================== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f8f8;
+}

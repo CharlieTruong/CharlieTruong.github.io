@@ -3,4 +3,4 @@
 	url = https://github.com/CharlieTruong/todo_backbone_js.git
 [submodule "polymer_presentation"]
 	path = polymer_presentation
-	url = git@personal.github.com:CharlieTruong/polymer_presentation.git
+	url = https://github.com/CharlieTruong/polymer_presentation.git
